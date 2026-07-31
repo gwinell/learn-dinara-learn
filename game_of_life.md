@@ -1,5 +1,30 @@
 # Подробное объяснение программы Game of Life
 
+Как проверить 
+
+```bash
+gcc -Wall -Wextra -Werror -std=c11 -o game_of_life game_of_life.c -lncurses
+```
+
+clang-format проверить
+```bash
+clang-format -n game_of_life.c
+```
+
+clang-format применить
+```bash
+clang-format -i game_of_life.c
+```
+cppcheck
+```bash
+cppcheck --enable=all --std=c11 --suppress=missingIncludeSystem game_of_life.c
+```
+
+leaks
+```bash
+MallocStackLogging=1 leaks -atExit -- ./game_of_life < initial_state_1.txt
+```
+
 ## 1. Что делает эта программа
 
 Это консольная реализация **игры «Жизнь»** (The Game of Life) Джона Конвея.
