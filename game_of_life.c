@@ -105,7 +105,7 @@ static void print_field(const struct Field* field) {
             mvaddch(row, col, ch);
         }
     }
-    mvaddstr(STATUS_LINE, 0, "Controls: A/Z speed, Q/Space quit");
+    mvaddstr(STATUS_LINE, 0, "Controls: A/Z speed, Space quit");
     refresh();
 }
 
