@@ -125,7 +125,7 @@ static void cleanup_ncurses() { endwin(); }
 static int handle_input(int delay, int* running) {
     int result = delay;
     int ch = getch();
-    if (ch == ' ' || ch == 'q' || ch == 'Q') {
+    if (ch == ' ') {
         *running = 0;
     } else if ((ch == 'a' || ch == 'A') && result > MIN_DELAY) {
         result -= DELAY_STEP;
