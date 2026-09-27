@@ -1,0 +1,10 @@
+# Compiled binaries and build artifacts
+/game_of_life
+/pong
+*.o
+*.out
+
+# Local editor files
+.DS_Store
+.idea/
+.vscode/
