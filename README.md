@@ -22,7 +22,7 @@ cc -std=c11 -Wall -Wextra -O2 game_of_life.c -lncurses -o game_of_life
 cc -std=c11 -Wall -Wextra -O2 pong.c -o pong
 ```
 
-The `initial_state_*.txt` files contain sample starting layouts for Game of Life. The repository also includes a prebuilt `game_of_life` binary, but compiling the source on your own system is preferable.
+The `initial_state_*.txt` files contain sample starting layouts for Game of Life. Build the executable locally from the source rather than relying on a prebuilt binary.
 
 ## Repository purpose
 
